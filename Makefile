@@ -9,7 +9,7 @@ all: help
 DESTDIR ?= 
 PREFIX ?= /usr/local
 PNAME = calf_big_styles
-PVERSION = 1.0.0
+PVERSION = 1.0.1
 LICENSEINST ?= yes
 
 help:
