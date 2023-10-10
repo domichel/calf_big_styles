@@ -8,7 +8,7 @@ all: help
 
 DESTDIR ?= 
 PREFIX ?= /usr/local
-PNAME = calf-big-styles
+PNAME = calf_big_styles
 PVERSION = 1.0.0
 LICENSEINST ?= yes
 
@@ -30,6 +30,7 @@ help:
 
 install:
 	@echo "Installing the calf styles into $(DESTDIR)$(PREFIX)/share/calf/styles ..."
+	mkdir -p $(DESTDIR)$(PREFIX)/share/calf/styles
 	cp -r Calf_0.0.19_Big $(DESTDIR)$(PREFIX)/share/calf/styles
 	cp -r Calf_Default_Big $(DESTDIR)$(PREFIX)/share/calf/styles
 	cp -r Calf_Flat_Big $(DESTDIR)$(PREFIX)/share/calf/styles
